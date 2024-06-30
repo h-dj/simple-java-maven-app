@@ -16,4 +16,4 @@ fi
 # 拉取最新镜像
 docker pull "${remote_tag_ext}"
 # 运行容器
-docker run --restart=always -di --name="${docker_hub_namespace}_${module_name_suffix}" "${remote_tag_ext}"
+docker run -di --name="${docker_hub_namespace}_${module_name_suffix}" "${remote_tag_ext}"
