@@ -1,5 +1,5 @@
 # 基础镜像
-FROM openjdk:17-jre
+FROM openjdk:23-ea-17-oraclelinux9
 
 # 设置容器时区为当前时区
 RUN /bin/cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \&& echo 'Asia/Shanghai' >/etc/timezone
